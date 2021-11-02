@@ -19,6 +19,7 @@
     margin: 4px;
     text-align: left;
     overflow: hidden;
+    position: relative;
 }
 
 .item img {
@@ -35,6 +36,26 @@
 
 .item:hover img:first-child {
     display: none;
+}
+
+.favourite-add {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    top: 10px;
+    right: 0px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.favourite-add::after {
+    content: '\2665';
+}
+
+.favourite-add:hover {
+    color: red;
 }
 
 .item-info {
