@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-.container {
-
-}
-
 .row {
     text-align: center;    
 }
@@ -21,6 +17,8 @@
     overflow: hidden;
     position: relative;
 }
+
+/*Item imgs*/
 
 .item img {
     width: 100%;
@@ -38,6 +36,7 @@
     display: none;
 }
 
+/*Add favourite button*/
 .favourite-add {
     position: absolute;
     width: 30px;
@@ -57,6 +56,8 @@
 .favourite-add:hover {
     color: red;
 }
+
+/*Item info*/
 
 .item-info {
     font-family: Arial, Helvetica, sans-serif;
