@@ -54,10 +54,6 @@
     font-size: 10px;
 }
 
-.item-brand {
-
-}
-
 .item-price-new, .item-price-old {
     display: inline-block;
 
@@ -70,5 +66,9 @@
 
 .item-price-old {
     text-decoration: line-through;
+}
+
+.item-price-new::after, .item-price-old::after {
+    content: ' \20AC';
 }
 
