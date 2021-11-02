@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin:auto;
+}
+
+.row {
+    text-align: center;
+}
+
+.item {
+    background-color: lightblue;
+    width: 310px;
+    height: 490px;
+    display: inline-block;
+    margin: 4px;
+}
+
