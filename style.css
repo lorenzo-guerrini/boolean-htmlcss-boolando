@@ -18,8 +18,7 @@
     position: relative;
 }
 
-/*Item imgs*/
-
+/*Item imgs hover*/
 .item img {
     width: 100%;
 }
@@ -57,10 +56,48 @@
     color: red;
 }
 
-/*Item info*/
-
-.item-info {
+/*Font*/
+.tags, .item-info {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Item tags*/
+.tags {
+    position: absolute;
+    width: 100%;
+    height: 16px;
+    bottom: 57px;
+    color: white;
+    font-size: 9px;
+    font-weight: bold;
+    line-height: 16px;
+}
+
+.tag-discount, .tag-eco {
+    float: left;
+    height: 100%;
+    padding: 1px 4px 0px 4px;
+}
+
+.tag-discount {
+    background-color: #CF393E;
+    margin-right: 2px;
+}
+
+.tag-discount::after {
+    content: '\0025';
+}
+
+.tag-eco {
+    background-color: #45835D;
+}
+
+.tag-eco::after {
+    content: "Sostenibilit\00E0";
+}
+
+/*Item info*/
+.item-info {
     line-height: 0px;
     margin-top: 8px;
 }
