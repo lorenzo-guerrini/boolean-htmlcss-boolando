@@ -20,3 +20,20 @@
     margin: 4px;
 }
 
+.item img {
+    width: 100%;
+}
+
+.item img:nth-child(2) {
+    display: none;
+}
+
+.item:hover img:nth-child(2) {
+    display: inline-block;
+}
+
+.item:hover img:first-child {
+    display: none;
+}
+
+
