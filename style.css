@@ -37,4 +37,18 @@
     display: none;
 }
 
+.item-price-new, .item-price-old {
+    display: inline-block;
+}
 
+.item-price-new {
+    color: red;
+}
+
+.item-price-old {
+    text-decoration: line-through;
+}
+
+.item-name {
+    text-transform: uppercase;
+}
