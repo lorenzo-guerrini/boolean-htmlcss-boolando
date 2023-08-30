@@ -1,152 +1,157 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*Test per gestire il cuore senza html, come visto a lezione. Esito: non si può gestire l'hover sugli after*/
 .test::after {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background-color: white;
-    top: 10px;
-    right: 0px;
-    text-align: center;
-    line-height: 30px;
-    font-size: 20px;
-    content: '\2665';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  top: 10px;
+  right: 0px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  content: "\2665";
 }
 
 .test:hover::after {
-    color: red;    
+  color: red;
 }
 
 /*Row e item*/
 .row {
-    text-align: center;    
+  text-align: center;
 }
 
 .item {
-    width: 310px;
-    height: 490px;
-    display: inline-block;
-    margin: 4px;
-    text-align: left;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
+  width: 310px;
+  height: 490px;
+  display: inline-block;
+  margin: 4px;
+  text-align: left;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
 }
 
 /*Item imgs hover*/
 .item img {
-    width: 100%;
+  width: 100%;
 }
 
 .item img:nth-child(2) {
-    display: none;
+  display: none;
 }
 
 .item:hover img:nth-child(2) {
-    display: inline-block;
+  display: inline-block;
 }
 
 .item:hover img:first-child {
-    display: none;
+  display: none;
 }
 
 /*Add favourite button*/
 .favourite-add {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background-color: white;
-    top: 10px;
-    right: 0px;
-    text-align: center;
-    line-height: 30px;
-    font-size: 20px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  top: 10px;
+  right: 0px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
 }
 
 .favourite-add::after {
-    content: '\2665';
+  content: "\2665";
 }
 
 .favourite-add:hover {
-    color: red;
+  color: red;
 }
 
 /*Font*/
-.tags, .item-info {
-    font-family: Arial, Helvetica, sans-serif;
+.tags,
+.item-info {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*Item tags*/
 .tags {
-    position: absolute;
-    width: 100%;
-    height: 16px;
-    bottom: 57px;
-    color: white;
-    font-size: 9px;
-    font-weight: bold;
-    line-height: 16px;
+  position: absolute;
+  width: 100%;
+  height: 16px;
+  bottom: 57px;
+  color: white;
+  font-size: 9px;
+  font-weight: bold;
+  line-height: 16px;
 }
 
-.tag-discount, .tag-eco {
-    float: left;
-    height: 100%;
-    padding: 1px 4px 0px 4px;
+.tag-discount,
+.tag-eco {
+  float: left;
+  height: 100%;
+  padding: 1px 4px 0px 4px;
 }
 
 .tag-discount {
-    background-color: #CF393E;
-    margin-right: 2px;
+  background-color: #cf393e;
+  margin-right: 2px;
 }
 
 .tag-discount::after {
-    content: '\0025';
+  content: "\0025";
 }
 
 .tag-eco {
-    background-color: #45835D;
+  background-color: #45835d;
 }
 
 .tag-eco::after {
-    content: "Sostenibilit\00E0";
+  content: "Sostenibilit\00E0";
 }
 
 /*Item info*/
 .item-info {
-    line-height: 0px;
-    margin-top: 8px;
+  line-height: 0px;
+  margin-top: 8px;
 }
 
 .item-name {
-    font-size: 11px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 11px 0;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 11px 0;
 }
 
-.item-brand, .item-price-new, .item-price-old {
-    font-size: 10px;
+.item-brand,
+.item-price-new,
+.item-price-old {
+  font-size: 10px;
 }
 
-.item-price-new, .item-price-old {
-    display: inline-block;
-
+.item-price-new,
+.item-price-old {
+  display: inline-block;
 }
 
 .item-price-new {
-    color: red;
-    font-weight: bold;
+  color: red;
+  font-weight: bold;
 }
 
 .item-price-old {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
-.item-price-new::after, .item-price-old::after {
-    content: ' \20AC';
+.item-price-new::after,
+.item-price-old::after {
+  content: " \20AC";
 }
